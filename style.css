@@ -1,0 +1,58 @@
+* { 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    font-family: roboto, sans-serif;
+    text-align: center;
+    
+}
+h1 {
+    font-family: Shrikhand;
+    Font-size: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+}
+.search {
+    background-color: #d3d3d33d;
+}
+.ville {
+    padding: 15px 0;
+    background-color: #d3d3d354;
+    font-weight: bold;
+    font-size: 17px;
+}
+.ville i {
+    margin-right: 15px;
+    font-size: 17px;
+}
+h2 {
+    font-size: 25px;
+    padding: 30px 0;
+}
+.search__info {
+    font-size: 20px;
+}
+.search button {
+    padding: 15px 20px;
+    margin: 30px 0 50px 0;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(#FF79DA, #9356DC);
+}
+ul {
+    list-style-type: none;
+    counter-reset: li 0;
+ }
+li::before { content: counter(li) ; counter-increment: li}
+li {
+    background-color: #d3d3d33d;
+    margin: 15px 60px;
+    padding: 25px 0;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+
