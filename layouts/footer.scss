@@ -1,0 +1,16 @@
+footer {
+    background-color: $dark;
+    padding-bottom: 15px;
+    text-align: left;
+    & h2, h3, p {
+        margin: 10px 40px;
+        color: $white;
+    }
+    & h2 {
+        font-family: Shrikhand, cursive;
+        padding:   35px 0 10px 0;
+    }
+    & i {margin-right: 15px;}
+    & p {font-size: 18px}
+}
+        
