@@ -4,10 +4,12 @@
 @import "./utils/mixin.scss";
 @import "./utils/variables";
 @import "./layouts/footer.scss";
-
+@import "./layouts/section_img.scss";
+@import "./layouts/main_menu.scss";
+@import "./Composants/Composants.scss";
 .ville {
     padding: 15px 0;
-    background-color: $darkgrey;
+    background-color: $grey;
     font-weight: bold;
     font-size: 17px;
 & i {
@@ -24,15 +26,19 @@
     &__info {
         font-size: 20px;
     }
-    & button {
-        padding: 15px 20px;
-        margin: 30px 0 50px 0;
-        color: $white;
-        font-size: 16px;
-        border-radius: 25px;
+    & form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $grey;
+        gap: 15px;
+      }
+    & input {
+        background: none;
         border: none;
-        background: linear-gradient($pink, $purple);
-        @include button;
+        text-align: center;
+        text-align: left;
+        width: 150px;
     }
 }
     .list {
@@ -121,26 +127,13 @@
         margin-top: 5px;
         font-size: 15px;
     }
-    & .fa-heart { 
-        position: absolute;
-        display:inline-block;
+    & i {position: absolute;
         right: 20px;
         bottom: 15px;
-        font-size: 20px;
-        color: $gray;
-        transition: transform .1s;
-        }
-        
-        .fa-heart:hover {
-            background: linear-gradient(#FF79DA, #9356DC);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
-            cursor: pointer;
-            transform: scale(1.1); 
     }
     } 
 }
-
  
 @import "./layouts/footer.scss";
+
+

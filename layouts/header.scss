@@ -6,3 +6,17 @@ h1 {
     /*box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;*/
     @include box-shadow;
 }
+.h1__pages {
+    box-shadow: none;
+    margin: auto;
+}
+   
+nav {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    & i {
+        margin-left: 40px;
+        font-size: 20px
+    }
+}
