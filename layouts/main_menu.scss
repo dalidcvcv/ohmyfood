@@ -38,7 +38,8 @@
     margin: 25px 0;
     flex-direction: column;
     gap: 20px;
-    width: 31%;}
+    width: 31%;
+}
 
 & .menu__detail {
     display: flex;
@@ -49,10 +50,17 @@
     overflow: hidden;
     @include box-shadow;
     animation: loader_menu 1s 2s both;
-}
+   }
 & .menu__detail__text {
     padding: 20px 0 20px 15px;
-    width: 70%;
+    text-overflow : ellipsis '...';
+    white-space: nowrap;
+    overflow: hidden;
+    p, h4 {
+    text-overflow: ellipsis '...';
+    white-space: nowrap;
+    overflow: hidden;
+    }
 }
 
 & .prix {
@@ -60,7 +68,7 @@
     align-items: center;
     font-weight: bold;
     margin-left: auto;
-    padding: 18px 10px 0 10px;
+    padding: 18px 20px 0 10px;
     font-weight: bold;
   }
   @media (max-width: 768px) {

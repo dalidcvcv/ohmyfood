@@ -335,13 +335,19 @@ button {
     animation: loader_menu 1s 2s both; }
   .main__menu .menu__detail__text {
     padding: 20px 0 20px 15px;
-    width: 70%; }
+    text-overflow: ellipsis '...';
+    white-space: nowrap;
+    overflow: hidden; }
+    .main__menu .menu__detail__text p, .main__menu .menu__detail__text h4 {
+      text-overflow: ellipsis '...';
+      white-space: nowrap;
+      overflow: hidden; }
   .main__menu .prix {
     display: flex;
     align-items: center;
     font-weight: bold;
     margin-left: auto;
-    padding: 18px 10px 0 10px;
+    padding: 18px 20px 0 10px;
     font-weight: bold; }
   @media (max-width: 768px) {
     .main__menu {
