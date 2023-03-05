@@ -3,7 +3,7 @@
 h1 {
     font-family: Shrikhand, cursive;
     Font-size: 50px;
-    /*box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;*/
+    position: relative;
     @include box-shadow;
 }
 .h1__pages {
