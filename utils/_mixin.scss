@@ -33,3 +33,10 @@
         box-shadow: 0 3px #a09d9d;
         transform: translateY(1px);}
 }   
+@mixin anim-delay ($items){
+    @for $i from 1 through $items {
+  .menu__detail:nth-child(#{$i}) {
+    animation-delay: #{$i * 0.2}s;
+  }
+}
+}

@@ -1,5 +1,6 @@
 @import "../utils/variables.scss";
 @import "../Composants/Composants.scss";
+@import "../utils/animation.scss";
 
 .main__menu {
     border-radius: 40px 40px 0 0;
@@ -47,30 +48,12 @@
     border-radius: 15px;
     overflow: hidden;
     @include box-shadow;
+    animation: loader_menu 1s 2s both;
 }
 & .menu__detail__text {
     padding: 20px 0 20px 15px;
     width: 70%;
 }
-.menu__detail__anim {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $green;
-    padding: 0 22px;
-    width: 20px;
-    border-radius: 0px 15px 15px 0;
-    margin-right: -70px;
-    transition: all 0.5s;
-    
-    & .fa-check {
-        position: inherit;
-        background: white;
-        padding: 7px;
-        border-radius: 50%;
-        color: $green;
-        transition: all 0.5s ease-in-out;
-    }}
 
 & .prix {
     display: flex;
@@ -93,10 +76,6 @@
         width: 100%;
     }
 } 
-}    
+}      
 
-.menu__detail:hover {
-    .menu__detail__anim{
-    margin-right: 0;}
-    & .fa-check { transform: rotate(360deg);; }
-}  
+@include anim-delay (9);
