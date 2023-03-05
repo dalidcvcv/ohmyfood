@@ -1,12 +1,25 @@
 
 .loader {
-  margin: 0;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #C4D9EB;
+  background: $gray;
   flex-direction: column;
+  opacity: 0.95;
+  animation: spin 3s linear;
+  animation-fill-mode: both;
+}
+@keyframes spin {
+  0% {
+    transform: scale(1);
+  }
+    100% {
+    visibility: hidden;
+  }
 }
 .loader1 {
   position:absolute;
@@ -19,6 +32,7 @@
   margin: 50px 0 0 0;
   animation: flash 1.2s linear infinite;
 }
+@include letter_delay(8);
 @keyframes flash {
   0% {
       color: $purple;
@@ -33,95 +47,103 @@
      
   }
 }
-
-.lettre:nth-child(1){
-  animation-delay: 0.1s;
-}
-.lettre:nth-child(2){
-  animation-delay: 0.2s;
-}
-.lettre:nth-child(3){
-  animation-delay: 0.3s;
-}
-.lettre:nth-child(4){
-  animation-delay: 0.4s;
-}
-.lettre:nth-child(5){
-  animation-delay: 0.5s;
-}
-.lettre:nth-child(6){
-  animation-delay: 0.6s;
-}
-.lettre:nth-child(7){
-  animation-delay: 0.7s;
-}
-.lettre:nth-child(8){
-  animation-delay: 0.8s;
-}
-
 .fondu-out {
   opacity: 0;
   transition: opacity 0.8s ease-out;
 }
 .loader2 {
   position: absolute;
-  top: 300px; }
+  top: 300px; 
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 25px;
+    position: relative;
+    opacity: 0;
+    animation: 2s fadeInUp infinite linear 2s; }
+  
+  & li {
+    width: 6px;
+    height: 15px;
+    background: $green;
+    position: absolute;
+    box-shadow: 0 0 1px $green;
+    transform-origin: bottom; }
+  
+  & li:nth-child(1) {
+    left: 26px;
+    bottom: 5px;
+    transform: rotate(-35deg); }
+  
+  & li:nth-child(2) {
+    left: 34px;
+    bottom: 8px; }
+  
+  & li:nth-child(3) {
+    left: 42px;
+    bottom: 5px;
+    transform: rotate(35deg); }
+  }  
 
 .wineglass {
   height: 36px;
-  position: relative; }
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 47px;
+    left: 5px;
+    width: 20px;
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 1px white; }
+   }
 
-.wineglass:after {
-  content: '';
-  position: absolute;
-  top: 47px;
-  left: 5px;
-  width: 20px;
-  height: 5px;
-  background: white;
-  box-shadow: 0 0 1px white; }
 
 .top {
   background: white;
   width: 30px;
   height: 36px;
   border-radius: 0 0 36px 36px;
-  box-shadow: 0 0 1px white; }
+  box-shadow: 0 0 1px white; 
+  &:before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: linear-gradient(transparent 50%, #FF79DA 50%); }
+   &:after {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: 12px;
+      width: 6px;
+      height: 13px;
+      background: white;
+      box-shadow: 0 0 1px white; }
+  }
 
-.top:before {
-  content: '';
-  position: absolute;
-  left: 4px;
-  bottom: 4px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: linear-gradient(transparent 50%, #FF79DA 50%); }
 
-.left .top:before {
-  animation: rotate2 2s linear infinite; }
 
-.right .top:before {
-  animation: rotate1 2s linear infinite; }
-
-.top:after {
-  content: '';
-  position: absolute;
-  top: 35px;
-  left: 12px;
-  width: 6px;
-  height: 13px;
-  background: white;
-  box-shadow: 0 0 1px white; }
 
 .left {
   display: inline-block;
   margin-right: 10px;
-  animation: rotate1 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite; }
+  animation: rotate1 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite; 
+  .top:before {
+    animation: rotate2 2s linear infinite; }
+  }
 
 .right {
   display: inline-block;
-  animation: rotate2 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite; }
+  animation: rotate2 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
+  .top:before {
+    animation: rotate1 2s linear infinite; } }
 
 @keyframes rotate1 {
   0% {
@@ -133,37 +155,6 @@
     transform: rotate(0deg); }
   50% {
     transform: rotate(-22deg); } }
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 70px;
-  height: 25px;
-  position: relative;
-  opacity: 0;
-  animation: 2s fadeInUp infinite linear 2s; }
-
-.loader2 li {
-  width: 6px;
-  height: 15px;
-  background: white;
-  position: absolute;
-  box-shadow: 0 0 1px white;
-  transform-origin: bottom; }
-
-.loader2 li:nth-child(1) {
-  left: 26px;
-  bottom: 5px;
-  transform: rotate(-35deg); }
-
-.loader2 li:nth-child(2) {
-  left: 34px;
-  bottom: 8px; }
-
-.loader2 li:nth-child(3) {
-  left: 42px;
-  bottom: 5px;
-  transform: rotate(35deg); }
 
 @keyframes fadeInUp {
   0% {

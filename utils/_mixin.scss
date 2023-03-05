@@ -40,3 +40,10 @@
   }
 }
 }
+@mixin letter_delay ($item){
+    @for $i from 1 through $item {
+      .lettre:nth-child(#{$i}) {
+    animation-delay: #{$i * 0.1}s;
+  }
+  }
+  }
