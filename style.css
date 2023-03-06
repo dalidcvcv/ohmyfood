@@ -94,7 +94,8 @@ button {
     visibility: hidden; } }
 .loader1 {
   position: absolute;
-  top: 150px; }
+  top: 150px;
+  white-space: nowrap; }
 
 .lettre {
   font-size: 80px;
@@ -102,6 +103,9 @@ button {
   font-family: Shrikhand, cursive;
   margin: 50px 0 0 0;
   animation: flash 1.2s linear infinite; }
+  @media (max-width: 780px) {
+    .lettre {
+      font-size: 30px; } }
 
 .lettre:nth-child(1) {
   animation-delay: 0.1s; }

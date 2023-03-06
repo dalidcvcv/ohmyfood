@@ -24,6 +24,7 @@
 .loader1 {
   position:absolute;
   top:150px;
+  white-space: nowrap;
 }
 .lettre {
   font-size: 80px;
@@ -31,6 +32,11 @@
   font-family: Shrikhand, cursive;
   margin: 50px 0 0 0;
   animation: flash 1.2s linear infinite;
+  @media (max-width: $width1) {
+    & {
+      font-size: 30px
+    }
+  }
 }
 @include letter_delay(8);
 @keyframes flash {
