@@ -1,3 +1,2 @@
-[DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf](https://github.com/dalidcvcv/ohmyfood/files/10898779/DW%2BP3%2B-%2BBrief%2Bcreatif%2B-%2BOhmyfood.pdf)
-
+https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf
 https://dalidcvcv.github.io/ohmyfood/
