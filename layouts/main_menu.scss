@@ -53,11 +53,11 @@
    }
 & .menu__detail__text {
     padding: 20px 0 20px 15px;
-    text-overflow : ellipsis '...';
+    text-overflow : ellipsis ;
     white-space: nowrap;
     overflow: hidden;
     p, h4 {
-    text-overflow: ellipsis '...';
+    text-overflow: ellipsis ;
     white-space: nowrap;
     overflow: hidden;
     }
@@ -71,7 +71,7 @@
     padding: 18px 20px 0 10px;
     font-weight: bold;
   }
-  @media (max-width: 768px) {
+  @media (max-width: $width1) {
      & { 
           margin: 0 0 -36px 0;
       }

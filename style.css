@@ -48,7 +48,7 @@ footer {
     margin-right: 15px; }
   footer p {
     font-size: 18px; }
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     footer {
       flex-direction: column;
       align-items: flex-start; } }
@@ -73,7 +73,8 @@ footer {
 .underline {
   width: 40px;
   border-bottom: 4px solid #99e2d0;
-  border-top: none; }
+  border-top: none;
+  display: block; }
 
 button {
   padding: 15px 20px;
@@ -88,7 +89,8 @@ button {
   button:hover {
     transform: scale(1.02);
     box-shadow: 0px 5px 15px 0px #C6C6C6;
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.9; }
   button:active {
     box-shadow: 0 3px #a09d9d;
     transform: translateY(1px); }
@@ -335,11 +337,11 @@ button {
     animation: loader_menu 1s 2s both; }
   .main__menu .menu__detail__text {
     padding: 20px 0 20px 15px;
-    text-overflow: ellipsis '...';
+    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
     .main__menu .menu__detail__text p, .main__menu .menu__detail__text h4 {
-      text-overflow: ellipsis '...';
+      text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden; }
   .main__menu .prix {
@@ -349,7 +351,7 @@ button {
     margin-left: auto;
     padding: 18px 20px 0 10px;
     font-weight: bold; }
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     .main__menu {
       margin: 0 0 -36px 0; }
     .main__menu .section__menu {
@@ -401,7 +403,8 @@ button {
 .underline {
   width: 40px;
   border-bottom: 4px solid #99e2d0;
-  border-top: none; }
+  border-top: none;
+  display: block; }
 
 button {
   padding: 15px 20px;
@@ -416,7 +419,8 @@ button {
   button:hover {
     transform: scale(1.02);
     box-shadow: 0px 5px 15px 0px #C6C6C6;
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.9; }
   button:active {
     box-shadow: 0 3px #a09d9d;
     transform: translateY(1px); }
@@ -661,7 +665,7 @@ button {
     justify-content: space-around;
     list-style-type: none;
     counter-reset: li 0; }
-    @media (max-width: 768px) {
+    @media (max-width: 780px) {
       .list ol {
         flex-direction: column; } }
   .list .l__items {
@@ -678,7 +682,8 @@ button {
     .list .l__items:hover {
       transform: scale(1.02);
       box-shadow: 0px 5px 15px 0px #C6C6C6;
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: 0.9; }
     .list .l__items:active {
       box-shadow: 0 3px #a09d9d;
       transform: translateY(1px); }
@@ -698,7 +703,7 @@ button {
       left: -10px; }
     .list .l__items i {
       margin: 0 15px 0 10px; }
-    @media (max-width: 768px) {
+    @media (max-width: 780px) {
       .list .l__items {
         width: 100%; } }
 
@@ -714,7 +719,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 40px; }
-    @media (max-width: 768px) {
+    @media (max-width: 780px) {
       .restaurant .container {
         flex-direction: column; } }
   .restaurant .card {
@@ -731,13 +736,14 @@ button {
     box-shadow: 0px 5px 15px 0px #C6C6C6;
     transition-duration: .5s;
     transition-property: transform; }
-    @media (max-width: 768px) {
+    @media (max-width: 780px) {
       .restaurant .card {
         width: 100%; } }
     .restaurant .card:hover {
       transform: scale(1.02);
       box-shadow: 0px 5px 15px 0px #C6C6C6;
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: 0.9; }
     .restaurant .card:active {
       box-shadow: 0 3px #a09d9d;
       transform: translateY(1px); }
@@ -787,7 +793,7 @@ footer {
     margin-right: 15px; }
   footer p {
     font-size: 18px; }
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     footer {
       flex-direction: column;
       align-items: flex-start; } }

@@ -5,7 +5,6 @@
     color: $gray;
     transition: transform .1s;
    
-   
     
 &:hover, &--menu:hover {
         @include linearGradient;
@@ -20,6 +19,7 @@
     width: 40px;
     border-bottom: 4px solid $green;
     border-top:none;
+    display: block;
 }
  button {
     padding: 15px 20px;
