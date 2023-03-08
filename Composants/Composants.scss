@@ -6,7 +6,7 @@
      }
 .fa-heart.fa-solid {
         opacity: 0;
-        transition: all 1s ease-in-out;
+        transition: all .5s ease-in-out;
     
 &:hover{
         @include linearGradient;

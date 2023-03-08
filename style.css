@@ -65,7 +65,7 @@ footer {
 
 .fa-heart.fa-solid {
   opacity: 0;
-  transition: all 1s ease-in-out; }
+  transition: all .5s ease-in-out; }
   .fa-heart.fa-solid:hover {
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
@@ -414,7 +414,7 @@ button {
 
 .fa-heart.fa-solid {
   opacity: 0;
-  transition: all 1s ease-in-out; }
+  transition: all .5s ease-in-out; }
   .fa-heart.fa-solid:hover {
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
