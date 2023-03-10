@@ -33,7 +33,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $grey;
+        background-color: $darkgrey;
         gap: 15px;
       }
     & input {
@@ -90,6 +90,9 @@
     @include box-shadow;
     & i {
         margin: 0 15px 0 10px;
+    }
+    & .fa-store {
+        color:$purple;
     }
     @media (min-width: $width1) {
         width: 31%;
